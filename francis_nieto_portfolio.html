@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis Nieto | Técnico Multimedial & Iluminador Escénico</title>
+    <!-- Tailwind CSS desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#111827',
+                            border: '#1F2937',
+                            accent: '#6366F1',
+                            cyan: '#06B6D4'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased min-h-screen selection:bg-brand-accent selection:text-white">
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <!-- LOGO / NOMBRE -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-brand-accent to-brand-cyan flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    FN
+                </div>
+                <div>
+                    <h1 class="font-bold text-base leading-none text-white">FRANCIS NIETO</h1>
+                    <span class="text-xs text-brand-cyan tracking-wider font-mono">VISUALES // LUCES // MULTIMEDIA</span>
+                </div>
+            </a>
+
+            <!-- NAV DESKTOP -->
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="#inicio" class="text-slate-300 hover:text-brand-cyan transition-colors">Inicio</a>
+                <a href="#experiencia" class="text-slate-300 hover:text-brand-cyan transition-colors">Trayectoria</a>
+                <a href="#galeria-fotos" class="text-slate-300 hover:text-brand-cyan transition-colors">Registros Fotográficos</a>
+                <a href="#videos-escena" class="text-slate-300 hover:text-brand-cyan transition-colors">VJ & Escena</a>
+                <a href="#contacto" class="bg-brand-accent hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm transition-all shadow-md shadow-indigo-500/20">Contacto</a>
+            </nav>
+
+            <!-- BTN MENU MOBILE -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- NAV MOBILE MENU -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-card border-b border-brand-border px-4 pt-2 pb-4 space-y-3">
+            <a href="#inicio" class="block text-slate-300 hover:text-brand-cyan py-1">Inicio</a>
+            <a href="#experiencia" class="block text-slate-300 hover:text-brand-cyan py-1">Trayectoria</a>
+            <a href="#galeria-fotos" class="block text-slate-300 hover:text-brand-cyan py-1">Registros Fotográficos</a>
+            <a href="#videos-escena" class="block text-slate-300 hover:text-brand-cyan py-1">VJ & Escena</a>
+            <a href="#contacto" class="inline-block bg-brand-accent text-white px-4 py-2 rounded-lg text-sm">Contacto</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/20 via-brand-dark to-brand-dark pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/10 border border-brand-accent/30 text-brand-cyan text-xs font-mono mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+                    TÉCNICO MULTIMEDIAL // ILUMINADOR ESCÉNICO
+                </div>
+                <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-none mb-6">
+                    Experiencia Audiovisual, <span class="bg-gradient-to-r from-brand-accent via-brand-cyan to-emerald-400 bg-clip-text text-transparent">Puestas de Luz</span> y Montaje Espacial.
+                </h2>
+                <p class="text-lg text-slate-400 mb-8 leading-relaxed">
+                    Operación de visuales en tiempo real, diseño de iluminación para artes escénicas y montajes museográficos. Integración de software como Resolume Arena, control MIDI y sistemas de iluminación DMX.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#galeria-fotos" class="bg-brand-accent hover:bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium transition-all shadow-lg shadow-indigo-500/25 flex items-center gap-2">
+                        <i data-lucide="image" class="w-5 h-5"></i> Ver Registros
+                    </a>
+                    <a href="#contacto" class="bg-brand-card hover:bg-slate-800 border border-brand-border text-slate-200 px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2">
+                        <i data-lucide="mail" class="w-5 h-5"></i> Contactar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAYECTORIA / RESUMEN -->
+    <section id="experiencia" class="py-12 bg-brand-card/50 border-y border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-xs font-mono text-brand-cyan uppercase tracking-wider mb-2">// PERFIL & EXPERIENCIA</h3>
+            <h4 class="text-2xl font-bold text-white mb-8">Trayectoria Destacada</h4>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Tarjeta 1 -->
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border hover:border-brand-accent/50 transition-colors">
+                    <div class="text-brand-accent mb-4"><i data-lucide="landmark" class="w-8 h-8"></i></div>
+                    <span class="text-xs text-slate-400">Nov 2024 - Feb 2027</span>
+                    <h5 class="text-lg font-bold text-white mt-1">Montajista Audiovisual</h5>
+                    <p class="text-sm text-brand-cyan mb-3">Museo Emilio Caraffa</p>
+                    <p class="text-sm text-slate-400">Montaje de telas suspendidas, calibración de tiro de proyección y sistemas multi-pantalla con Resolume para obras inmersivas.</p>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border hover:border-brand-accent/50 transition-colors">
+                    <div class="text-brand-accent mb-4"><i data-lucide="zap" class="w-8 h-8"></i></div>
+                    <span class="text-xs text-slate-400">Abr 2024 - Presente</span>
+                    <h5 class="text-lg font-bold text-white mt-1">Visualista VJ en Vivo</h5>
+                    <p class="text-sm text-brand-cyan mb-3">Club Paraguay & Studio Teatro</p>
+                    <p class="text-sm text-slate-400">Operación de visuales y diseño de iluminación MIDI adaptados a la dinámica en vivo de festivales y eventos escénicos.</p>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border hover:border-brand-accent/50 transition-colors">
+                    <div class="text-brand-accent mb-4"><i data-lucide="box" class="w-8 h-8"></i></div>
+                    <span class="text-xs text-slate-400">2024 - Actual</span>
+                    <h5 class="text-lg font-bold text-white mt-1">Producción y Diseño 3D</h5>
+                    <p class="text-sm text-brand-cyan mb-3">Proyectos Independientes</p>
+                    <p class="text-sm text-slate-400">Modelado y renderizado 3D para joyería, diseño de mobiliario y asistencia técnica en galerías independientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: REGISTROS FOTOGRÁFICOS (REEMPLAZA EL CARRUSEL PESADO DE GOOGLE SITES) -->
+    <section id="galeria-fotos" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+                <div>
+                    <h3 class="text-xs font-mono text-brand-cyan uppercase tracking-wider mb-2">// GALERÍA MASIVA</h3>
+                    <h4 class="text-3xl font-bold text-white">Registro Fotográfico de Montaje & Arte</h4>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md mt-2 md:mt-0">
+                    Documentación técnica de procesos de calibración, luces, telas suspendidas y montaje en espacio.
+                </p>
+            </div>
+
+            <!-- FILTROS (VANIALLA JS INCLUIDO) -->
+            <div class="flex flex-wrap gap-2 mb-8">
+                <button onclick="filterGallery('todos')" class="filter-btn active bg-brand-accent text-white px-4 py-1.5 rounded-full text-xs font-medium transition-all">Todos los registros</button>
+                <button onclick="filterGallery('caraffa')" class="filter-btn bg-brand-card text-slate-300 hover:bg-slate-800 border border-brand-border px-4 py-1.5 rounded-full text-xs font-medium transition-all">Museo Caraffa (Esotecnia.lab)</button>
+                <button onclick="filterGallery('vj')" class="filter-btn bg-brand-card text-slate-300 hover:bg-slate-800 border border-brand-border px-4 py-1.5 rounded-full text-xs font-medium transition-all">Puestas VJ / Teatro</button>
+                <button onclick="filterGallery('diseno3d')" class="filter-btn bg-brand-card text-slate-300 hover:bg-slate-800 border border-brand-border px-4 py-1.5 rounded-full text-xs font-medium transition-all">Joyas 3D & Producto</button>
+            </div>
+
+            <!-- GRID FOTOGRÁFICO RESPONSIVO -->
+            <div id="gallery-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Foto 1: Caraffa -->
+                <div class="gallery-item caraffa group relative overflow-hidden rounded-xl bg-brand-card border border-brand-border aspect-video">
+                    <img src="https://images.unsplash.com/photo-1508997449629-303059a039c0?auto=format&fit=crop&w=800&q=80" alt="Montaje Museo Caraffa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                        <span class="text-xs font-mono text-brand-cyan">01/03 • MONTAJE DE TELAS</span>
+                        <h5 class="text-white font-bold text-sm">Dispositivo de Proyección Inmersivo</h5>
+                        <p class="text-xs text-slate-300 mt-1">Calibración de tiros de proyección en Salas 6 y 7.</p>
+                    </div>
+                </div>
+
+                <!-- Foto 2: Caraffa -->
+                <div class="gallery-item caraffa group relative overflow-hidden rounded-xl bg-brand-card border border-brand-border aspect-video">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80" alt="Pruebas de Iluminación" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                        <span class="text-xs font-mono text-brand-cyan">02/03 • CALIBRACIÓN DMX</span>
+                        <h5 class="text-white font-bold text-sm">Configuración de Luces Robóticas</h5>
+                        <p class="text-xs text-slate-300 mt-1">Enfoque de luces robóticas y focos dicroicos.</p>
+                    </div>
+                </div>
+
+                <!-- Foto 3: VJ / Teatro -->
+                <div class="gallery-item vj group relative overflow-hidden rounded-xl bg-brand-card border border-brand-border aspect-video">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80" alt="VJ en Vivo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                        <span class="text-xs font-mono text-brand-cyan">SHOW EN VIVO</span>
+                        <h5 class="text-white font-bold text-sm">Operación MIDI & Sync Rítmico</h5>
+                        <p class="text-xs text-slate-300 mt-1">Club Paraguay - Set visual en tiempo real con Akai APC Mini.</p>
+                    </div>
+                </div>
+
+                <!-- Foto 4: Diseño 3D -->
+                <div class="gallery-item diseno3d group relative overflow-hidden rounded-xl bg-brand-card border border-brand-border aspect-video">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modelado 3D Joyería" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                        <span class="text-xs font-mono text-brand-cyan">MODELADO 3D</span>
+                        <h5 class="text-white font-bold text-sm">Maga Joyas 3D</h5>
+                        <p class="text-xs text-slate-300 mt-1">Modelado, renderizado e impresión 3D de piezas complejas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: REGISTROS EN VIDEO (INCRUSTACIÓN DE YOUTUBE FLUIDA) -->
+    <section id="videos-escena" class="py-16 bg-brand-card/30 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-xs font-mono text-brand-cyan uppercase tracking-wider mb-2">// VIDEO SHOW REEL & PERFORMANCE</h3>
+            <h4 class="text-3xl font-bold text-white mb-8">Visuales en Vivo & Puestas Escénicas</h4>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-brand-card rounded-xl border border-brand-border overflow-hidden">
+                    <div class="relative w-full aspect-video bg-black">
+                        <!-- Sustituir la URL del iframe por tu ID de video de YouTube -->
+                        <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="bg-brand-accent/20 text-brand-cyan text-xs font-mono px-2 py-0.5 rounded">RESOLUME ARENA</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs font-mono px-2 py-0.5 rounded">DMX LIGHTING</span>
+                        </div>
+                        <h5 class="text-xl font-bold text-white">Operación MIDI & Sync Rítmico</h5>
+                        <p class="text-sm text-slate-400 mt-2">Puesta en escena interactiva con variación de opacidad inmediata según ritmo musical para festivales y obras teatrales.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-brand-card rounded-xl border border-brand-border overflow-hidden">
+                    <div class="relative w-full aspect-video bg-black">
+                        <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="VJ Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="bg-brand-cyan/20 text-brand-cyan text-xs font-mono px-2 py-0.5 rounded">MUSEOGRAFÍA</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs font-mono px-2 py-0.5 rounded">PROYECCIÓN MULTIPANTALLA</span>
+                        </div>
+                        <h5 class="text-xl font-bold text-white">Esotecnia.lab - Registro de Registro</h5>
+                        <p class="text-sm text-slate-400 mt-2">Recorrido del dispositivo inmersivo montado en el Museo Emilio Caraffa (Salas 6 y 7).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO SECCIÓN -->
+    <section id="contacto" class="py-16">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-xs font-mono text-brand-cyan uppercase tracking-wider mb-2">// CONSULTAS & MONTAJES</h3>
+            <h4 class="text-3xl font-bold text-white mb-4">Contacto Directo</h4>
+            <p class="text-slate-400 text-sm mb-8">Córdoba, Argentina • Tel: 351-152416704 • francisnietomultimedial@gmail.com</p>
+
+            <form class="space-y-4 text-left bg-brand-card p-6 sm:p-8 rounded-xl border border-brand-border">
+                <div>
+                    <label class="block text-xs font-mono text-slate-300 uppercase mb-1">Nombre / Institución</label>
+                    <input type="text" placeholder="Tu nombre" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none focus:border-brand-accent">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono text-slate-300 uppercase mb-1">Correo Electrónico</label>
+                    <input type="email" placeholder="tu@email.com" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none focus:border-brand-accent">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono text-slate-300 uppercase mb-1">Detalles del Requerimiento Audiovisual</label>
+                    <textarea rows="4" placeholder="Espacio, fechas de montaje o evento..." class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none focus:border-brand-accent"></textarea>
+                </div>
+                <button type="button" class="w-full bg-brand-accent hover:bg-indigo-600 text-white font-medium py-3 rounded-lg text-sm transition-colors shadow-lg shadow-indigo-500/20">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-6 border-t border-brand-border text-center text-xs text-slate-500">
+        <p>© 2026 Francis Nieto - Técnico Multimedial • Córdoba, Argentina</p>
+    </footer>
+
+    <!-- SCRIPTS MÍNIMOS DE FUNCIONALIDAD -->
+    <script>
+        // Lucide Icons init
+        lucide.createIcons();
+
+        // Toggle Menú Mobile
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Filtrado básico de galería fotográfica
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(b => {
+                b.classList.remove('bg-brand-accent', 'text-white');
+                b.classList.add('bg-brand-card', 'text-slate-300');
+            });
+
+            event.target.classList.remove('bg-brand-card', 'text-slate-300');
+            event.target.classList.add('bg-brand-accent', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'todos' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
